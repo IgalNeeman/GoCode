@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="httpbin.org/get" method="get">
+        <div>
+            <label for="name">FirstName:</label>
+
+            <input type="text" id="name" name="name" required minlength="4" maxlength="12" size="20"> 
+            <label for="name">LastName:</label>
+
+            <input type="text" id="name" name="name" minlength="4" maxlength="12" size="20">
+        </div>
+
+        <p>Choose your gender: 
+            <input type="checkbox" id="male" name="male">
+            <label for="male">male</label>
+          
+          
+          
+            <input type="checkbox" id="female" name="female">
+            <label for="female">female</label> </p>
+
+        
+
+       
+
+        <label for="age">enter you Age:</label>
+
+<input type="number" id="age" name="age"
+       min="1" max="100">
+
+
+<div>
+
+    <label for="pet-select">Choose a pet:</label>
+
+<select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select>
+</div>
+
+       
+        <div>
+            <label for="email">Enter your email:</label>
+
+            <input type="email" id="email" pattern=".+@" size="30" required>
+        </div>
+
+        <div><button>Send my profile</button> <button type="reset">reset</button> </div>
+
+    </form>
+</body>
+
+</html>

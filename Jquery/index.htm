@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1"/>
+    <input type="number" id="num2"/>
+    <button>calc</button>    
+    <div>answer is: </div>
+    <div class="sum"></div>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
+
+    <script>
+        var calcbtn = $('button');
+        calcbtn.click(function (){
+            var num1 = $('num1');
+            var num2 = $('num2');
+            var sum = $('.sum');
+            sum.html(parseInt(num1.val()) + parseInt(num2.val()) );
+        })
+    </script>
+</body>
+</html>

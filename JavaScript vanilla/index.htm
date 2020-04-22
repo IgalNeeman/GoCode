@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form novalidate action="httpbin.org/get" method="get">
+        <!--from NoValidate will disable the required request from the html && we are using by this because to handle the excepsions (error's)-->
+    <p>
+        <label for="mail">
+            <span>enter you'r email?</span>
+            <input type="email" id="mail" name="mail">
+            <span class="error"></span>
+        </label>
+    </p>
+    <button>submit</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
