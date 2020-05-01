@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wounder ground</title>
+</head>
+
+<body>
+    <h1>Weather Stations, please fill lat and lon + zoom </h1>
+    <form action="https://www.wunderground.com/wundermap">
+        <label>lat: </label>
+        <input type="number" placeholder="number between -90 to 90" name="lat" / required minlength="-70"
+            maxlength="90">
+        <br />
+        <label>lon: </label>
+        <input type="number" placeholder="number between -180 to 180" name="lon" / required minlength="-180"
+            maxlength="180">
+        <br />
+        <label>zoom: </label><select name="zoom">
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+        </select>
+        <!--     <input type="number" placeholder="number between 1 to 10" name="zoom"/ required minlength="1" maxlength="10" > -->
+        <br /><input type="button" value="send!" />
+        <button>s</button>
+    </form>
+
+</body>
+
+</html>
